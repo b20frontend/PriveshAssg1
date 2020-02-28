@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var a,b;
+function calculator(arguement)
+{
+	if(arguement=="first")
+	{
+	
+	a=prompt("enter first number");
+	}
+	else if(arguement=="second")
+	{
+	
+	b=prompt("enter second number");
+	
+	}
+	else if(arguement=="add")
+	{
+	
+	var c=parseInt(a)+parseInt(b);
+	document.getElementById("res").innerHTML=c;
+	}
+	
+	
+}
+
+
+
+
+</script>
+</head>
+<body>
+<h1 id="first" onclick="calculator(this.id)">Enter first number</h1>
+<h1 id="second" onclick="calculator(this.id)">Enter second number</h1>
+Result:<span id="res"></span>
+<button id="add" onclick="calculator(this.id)" value="add">add</button>
+</body>
+</html>
